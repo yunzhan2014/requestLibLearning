@@ -18,7 +18,11 @@ reqesIn_api = {'1': '/api/users',
 
 s = requests.session()
 api1 = base_url + reqesIn_api['1'] 
+api2 = base_url + reqesIn_api['2']
 nr = s.get(api1)
 
 def get_api1():
     return s.get(api1)
+
+def get_single_user():
+    return s.get(api2)
